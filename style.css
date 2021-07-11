@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #da4453; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Oxygen", sans-serif;
+}
+
+nav {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  height: 70px;
+}
+
+nav button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #333;
+  box-shadow: -6px 0px 10px 3px rgba(51, 51, 51, 0.445);
+}
+
+nav button .fa-search {
+  color: #fff;
+}
+
+nav div {
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(to right, #fff 50%, rgba(255, 255, 255, 0) 50%);
+  height: 40px;
+  border-radius: 0 50px 50px 0;
+}
+
+#search {
+  padding: 10px;
+  font-size: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 30px 0 0 30px;
+}
+
+#search:focus {
+  outline: none;
+}
+
+main {
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main span {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 30px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+main span:hover {
+  background-color: #da4453;
+}
